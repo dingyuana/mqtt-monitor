@@ -85,11 +85,11 @@ MQTT连接配置（使用EMQ X Cloud TLS/SSL）:
 
 ```javascript
 {
-  hostname: 'i10a1ac9.ala.cn-hangzhou.emqxsl.cn',
+  hostname: 'your-broker.emqxsl.cn',
   port: 8084,
   path: '/mqtt',
-  username: 'dy',
-  password: '9055'
+  username: 'your-username',
+  password: 'your-password'
 }
 ```
 

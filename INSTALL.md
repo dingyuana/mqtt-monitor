@@ -54,10 +54,10 @@ pip install -r requirements.txt
 编辑 `.env` 文件：
 
 ```bash
-MQTT_BROKER=i10a1ac9.ala.cn-hangzhou.emqxsl.cn
+MQTT_BROKER=your-broker.emqxsl.cn
 MQTT_PORT=8883
-MQTT_USERNAME=dy
-MQTT_PASSWORD=9055
+MQTT_USERNAME=your-username
+MQTT_PASSWORD=your-password
 COLLECTION_INTERVAL=3
 ```
 
@@ -67,11 +67,11 @@ COLLECTION_INTERVAL=3
 
 ```javascript
 const MQTT_CONFIG = {
-    hostname: 'i10a1ac9.ala.cn-hangzhou.emqxsl.cn',
+    hostname: 'your-broker.emqxsl.cn',
     port: 8084,
     path: '/mqtt',
-    username: 'dy',
-    password: '9055'
+    username: 'your-username',
+    password: 'your-password'
 };
 ```
 
