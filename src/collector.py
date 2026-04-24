@@ -4,12 +4,18 @@ import json
 import time
 import random
 import ssl
+import os
+from pathlib import Path
+from dotenv import load_dotenv
 
-MQTT_BROKER = "i10a1ac9.ala.cn-hangzhou.emqxsl.cn"
-MQTT_PORT = 8883
-MQTT_USERNAME = "dy"
-MQTT_PASSWORD = "9055"
-PUBLISH_INTERVAL = 3
+env_file = Path(__file__).parent.parent / ".env"
+load_dotenv(env_file)
+
+MQTT_BROKER = os.getenv("MQTT_BROKER", "i10a1ac9.ala.cn-hangzhou.emqxsl.cn")
+MQTT_PORT = int(os.getenv("MQTT_PORT", "8883"))
+MQTT_USERNAME = os.getenv("MQTT_USERNAME", "dy")
+MQTT_PASSWORD = os.getenv("MQTT_PASSWORD", "9055")
+PUBLISH_INTERVAL = int(os.getenv("COLLECTION_INTERVAL", "3"))
 
 class SystemCollector:
     def __init__(self):

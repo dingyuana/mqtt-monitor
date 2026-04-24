@@ -81,15 +81,15 @@ npx http-server web -p 8080
 
 ## 配置说明
 
-MQTT连接配置（默认使用EMQ X公共Broker）:
+MQTT连接配置（使用EMQ X Cloud TLS/SSL）:
 
 ```javascript
 {
-  hostname: 'broker.emqx.io',
-  port: 1883,
-  path: '',
-  username: 'admin',
-  password: 'public'
+  hostname: 'i10a1ac9.ala.cn-hangzhou.emqxsl.cn',
+  port: 8084,
+  path: '/mqtt',
+  username: 'dy',
+  password: '9055'
 }
 ```
 

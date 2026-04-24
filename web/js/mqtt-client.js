@@ -1,11 +1,14 @@
-const MQTT_CONFIG = {
-    hostname: 'i10a1ac9.ala.cn-hangzhou.emqxsl.cn',
-    port: 8084,
-    path: '/mqtt',
-    username: 'dy',
-    password: '9055',
-    clientId: 'mqtt_nexus_' + Math.random().toString(16).substr(2, 8)
-};
+if (typeof MQTT_CONFIG === 'undefined') {
+    const MQTT_CONFIG = {
+        hostname: 'i10a1ac9.ala.cn-hangzhou.emqxsl.cn',
+        port: 8084,
+        path: '/mqtt',
+        username: 'dy',
+        password: '9055'
+    };
+}
+
+MQTT_CONFIG.clientId = 'mqtt_nexus_' + Math.random().toString(16).substr(2, 8);
 
 const MQTT_TOPICS = [
     { topic: 'sys/cpu', qos: 1 },

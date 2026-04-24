@@ -31,3 +31,6 @@ env/
 .vscode/
 *.swp
 *.swo
+test-*.js
+
+.env
