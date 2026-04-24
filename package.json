@@ -1,0 +1,9 @@
+{
+  "name": "mqtt-monitor",
+  "version": "1.0.0",
+  "description": "MQTT系统监控项目 - Python采集+前端展示",
+  "dependencies": {
+    "mqtt": "^5.0.0",
+    "playwright": "^1.59.1"
+  }
+}
