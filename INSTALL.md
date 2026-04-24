@@ -115,21 +115,21 @@ python3 src/collector.py
 
 | 变量名 | 说明 | 默认值 |
 |--------|------|--------|
-| MQTT_BROKER | MQTT服务器地址 | i10a1ac9.ala.cn-hangzhou.emqxsl.cn |
+| MQTT_BROKER | MQTT服务器地址 | your-broker.emqxsl.cn |
 | MQTT_PORT | MQTT端口 | 8883 |
-| MQTT_USERNAME | 用户名 | dy |
-| MQTT_PASSWORD | 密码 | 9055 |
+| MQTT_USERNAME | 用户名 | your-username |
+| MQTT_PASSWORD | 密码 | your-password |
 | COLLECTION_INTERVAL | 采集间隔(秒) | 3 |
 
 ### config.js 配置项
 
 | 属性 | 说明 | 默认值 |
 |------|------|--------|
-| hostname | WebSocket服务器地址 | i10a1ac9.ala.cn-hangzhou.emqxsl.cn |
+| hostname | WebSocket服务器地址 | your-broker.emqxsl.cn |
 | port | WebSocket端口 | 8084 |
 | path | 路径 | /mqtt |
-| username | 用户名 | dy |
-| password | 密码 | 9055 |
+| username | 用户名 | your-username |
+| password | 密码 | your-password |
 
 ## 常见问题
 
